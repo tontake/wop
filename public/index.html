@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<head><title>Theo App Dashboard</title></head>
+
+<body>
+<center>
+<h1 align ="center">TheoApp</h1>
+<h2 align ="center"> Upload Announcements</h2>
+
+
+<textarea id="ann" rows="20" cols="50">
+Test Announcements .Come Early ,Church begins at 9.30AM.Remember its gonnna be a fire-packed and life-changing service
+</textarea>
+
+<button id="sub">Submit</button>
+<br>
+<h3>Uploaded Announcements</h3>
+<p id="p-ann"></p>
+
+</center>
+<!-- The core Firebase JS SDK is always required and 
+
+must be listed first -->
+<script src="/__/firebase/6.3.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you 
+
+want to use
+     
+
+https://firebase.google.com/docs/web/setup#reserve
+
+d-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/6.3.4/firebase-firestore.js"></script>
+
+<script src="/__/firebase/init.js"></script>
+<script >
+const db=firebase.firestore();
+db.settings=({timestampsInSnapshots:true});
+
+var valu =document.querySelector('#ann');
+var pann =document.querySelector('#p-ann');
+var thesubmit=document.querySelector('#sub');
+thesubmit.addEventListener('click',(e)=>{
+e.preventDefault();
+var text = document.createTextNode(valu.value);
+
+pann.appendChild(text);
+console.log(valu.value);
+var docRef = db.collection('announcements').doc
+
+('today');
+
+var setAda = docRef.set({
+  id: 3,
+  message:valu.value
+  });
+ 
+
+});
+
+
+
+</script>
+
+</body>
+
+
+</html>
+

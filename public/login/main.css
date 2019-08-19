@@ -1,0 +1,119 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+body{
+	background-color:#eee;
+	color:blue;
+}
+.heads{
+	height:80px;
+	background-color:white;
+	
+	
+}
+#heading{
+	font-size:40px;
+	font-family:serif;
+	font-weight:700;
+	color:darkblue;
+	position:absolute;
+	top:21%;
+	left:25%;
+	
+	
+}
+h2{
+	color:white;
+	
+}
+
+.logoword{
+	position:absolute;
+	left:5%;
+	top:50%;
+	
+	
+	
+	
+	
+
+
+
+	
+}
+.logword2{
+	position:absolute;
+	left:70%;
+	top:50%;
+	
+	
+}
+.loginbox{
+	position:absolute;
+	top:65%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	background:black;
+	width:340px;
+	height:440px;
+	border-radius:10px;
+	z-index:1;
+	color:white;
+	padding:20px 20px;
+}
+.lo-h{
+	text-align:center;
+	font-size:24px;
+	font-weight:bolder;
+}
+.loginbox input{
+	width:100%;
+	margin-bottom:25px;
+	color:white;
+}
+.loginbox input[type="text"],.loginbox input[type="password"]{
+	border:none;
+	margin-bottom:35px;
+	outline:none;
+	background:transparent;
+	border-bottom:1px solid #fff;
+	height:45px;
+}
+.loginbox input[type="submit"]{
+	background:#f5c107;
+	border-radius:10px;
+	height:40px;
+	font-size:22px;
+	font-weight:bolder;
+}
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	transition :all 1s ease-out;
+	background-color:lime;
+	color:black;
+}
+
+.forget-auth{
+	text-decoration:none;
+	line-height:20px;
+	color:red;
+}
+.foote{
+	position:absolute;
+	left:70%;
+	top:90%;
+	
+
+	color:green;
+	
+	
+	
+}
+a{
+	text-decoration:none!important;
+	color:black;
+}
+
